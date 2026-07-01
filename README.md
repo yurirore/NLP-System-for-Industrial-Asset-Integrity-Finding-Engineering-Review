@@ -22,17 +22,17 @@ Built using unsupervised clustering (hierarchical), supervised classification (R
                            │
               ┌────────────┼────────────┐
               ▼                         ▼
-    ┌─────────────────┐      ┌───────────────────┐
-    │  Sentence Embed  │      │  Random Forest    │
-    │  (MiniLM-L6-v2)  │      │  Classifier       │
-    │  384-dim vector  │      │  (new rec label)  │
-    └────────┬─────────┘      └────────┬──────────┘
+    ┌─────────────────┐      ┌────────────────-───┐
+    │  Sentence Embed │      │  Random Forest     │
+    │  (MiniLM-L6-v2) │      │  Classifier        │
+    │  384-dim vector │      │  (new rec label)   │
+    └────────┬────────┘      └───────-─┬────────-─┘
              │                         │
              ▼                         │
     ┌──────────────────┐               │
-    │  Nearest Centroid │              │
-    │  (topic matching) │              │
-    │  7 defect topics  │              │
+    │ Nearest Centroid │               │
+    │ (topic matching) │               │
+    │ 7 defect topics  │               │
     └────────┬─────────┘               │
              │                         │
              └──────┬───────────────-──┘
