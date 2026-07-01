@@ -10,14 +10,14 @@ Built using unsupervised clustering (hierarchical), supervised classification (R
 
 ```
                 ┌──────────────────────┐
-                │  Equipment Inspection  │
-                │  Finding Description   │
+                │ Equipment Inspection │
+                │ Finding Description  │
                 └──────────┬───────────┘
                            │
                            ▼
                 ┌──────────────────────┐
-                │   Text Preprocessing  │
-                │  (code removal, clean) │
+                │  Text Preprocessing  │
+                │ (code removal, clean)│
                 └──────────┬───────────┘
                            │
               ┌────────────┼────────────┐
@@ -29,13 +29,13 @@ Built using unsupervised clustering (hierarchical), supervised classification (R
     └────────┬─────────┘      └────────┬──────────┘
              │                         │
              ▼                         │
-    ┌──────────────────┐              │
+    ┌──────────────────┐               │
     │  Nearest Centroid │              │
     │  (topic matching) │              │
     │  7 defect topics  │              │
-    └────────┬─────────┘              │
-             │                        │
-             └──────┬─────────────────┘
+    └────────┬─────────┘               │
+             │                         │
+             └──────┬───────────────-──┘
                     ▼
         ┌───────────────────────┐
         │   FLAN-T5-Small       │
@@ -44,10 +44,10 @@ Built using unsupervised clustering (hierarchical), supervised classification (R
         └──────────┬────────────┘
                    ▼
         ┌──────────────────────┐
-        │  Structured Actions   │
-        │  "1. Isolate pump"    │
-        │  "2. Inspect seal"    │
-        │  "3. Replace seal"    │
+        │  Structured Actions  │
+        │  "1. Isolate pump"   │
+        │  "2. Inspect seal"   │
+        │  "3. Replace seal"   │
         └──────────────────────┘
 
 ```
@@ -180,4 +180,4 @@ MIT — see [LICENSE](LICENSE).
 
 ---
 
-*Built for PETRONAS equipment maintenance — designed to augment, not replace, engineering expertise.*
+*My internship project built for PETRONAS equipment maintenance. Designed to augment, not replace, engineering expertise.*
