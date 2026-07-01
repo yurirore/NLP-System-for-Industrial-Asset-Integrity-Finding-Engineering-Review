@@ -1,0 +1,60 @@
+# =============================================================================
+# Local files — kept on disk, excluded from GitHub
+# =============================================================================
+
+# Old dataset directory (kept for local reference)
+/slm dataset/
+
+# Orphan image
+/bgbg.jpg
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*$py.class
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =============================================================================
+# Trained model artifacts — reproduce via docs/reproduce_models.md
+# =============================================================================
+/models/classifiers/*.pkl
+/models/fine_tuned/*.pkl
+/models/bert-base-uncased/
+/models/all-MiniLM-L6-v2/
+/models/flan-t5-small/
+
+# Dataset archives
+*.zip
+*.tar
+*.gz
+
+# Outputs from pipeline runs
+/outputs/
+pipeline_results*.csv
+
+# Legacy monolith — replaced by src/pipeline.py
+/app.py
+
+# Moved to docs/interpretation.md
+/interpretation.md
+
+# NLTK data cache
+/nltk_data/
